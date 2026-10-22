@@ -4,28 +4,47 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Firefly Trail</title>
-<meta name="description" content="Firefly Trail: draw one glowing trail through every cell and reach the flowers in order. A logic puzzle with a new grid every day.">
+<meta name="description" content="Firefly Trail, now on Google Play: draw one glowing trail through every cell and reach the flowers in order. A logic puzzle with a new grid every day and a weekly league.">
 <link rel="icon" href="img/icon.png">
 <link rel="stylesheet" href="../style.css">
+<style>
+.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 24px 0 8px; }
+.shots img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
+@media (max-width: 560px) { .shots { grid-template-columns: repeat(2, 1fr); } }
+.btn.play { font-size: 17px; padding: 12px 22px 10px; }
+</style>
 </head>
 <body>
 <main>
   <img class="icon" src="img/icon.png" alt="" width="112" height="112">
   <h1>Firefly Trail</h1>
   <p class="lead">Guide a little firefly on one single glowing trail. Start on flower 1, pass through every cell exactly once and reach the flowers in number order. It sounds simple. It is not.</p>
+  <div class="links">
+    <a class="btn play" href="https://play.google.com/store/apps/details?id=com.artronic.fireflytrail&amp;referrer=utm_source%3Dartronic_site%26utm_medium%3Dweb%26utm_campaign%3Dgame_page">&#9654; Get it on Google Play</a>
+  </div>
+  <div class="shots">
+    <img src="img/shot-1.webp" alt="Connect the flowers in order: 1, 2, 3" width="432" height="768" loading="lazy">
+    <img src="img/shot-2.webp" alt="Pass through every cell, only once" width="432" height="768" loading="lazy">
+    <img src="img/shot-3.webp" alt="One glowing trail fills the grid: solved" width="432" height="768" loading="lazy">
+    <img src="img/shot-5.webp" alt="Weekly league: climb from Bronze to Diamond" width="432" height="768" loading="lazy">
+  </div>
   <div class="card">
     <h2>Features</h2>
     <ul>
       <li>Every puzzle has exactly one solution, and you can always find it by logic: no guessing, no 50/50</li>
-      <li>Hints that teach: they explain why a move is forced or impossible</li>
-      <li>A new trail every day, with a streak and a full archive</li>
-      <li>Unlimited play from 5×5 to 9×9, plus a timed mode</li>
+      <li>Hints that teach: they start from your line and explain why the next move is forced</li>
+      <li>A new grid every day, with a streak and a full archive of past days</li>
+      <li>Weekly league of 50 players: every grid you solve collects glow, faster and cleaner solves earn more, climb from Bronze to Diamond</li>
+      <li>Your profile: a name and 63 collectible 3D figurines, unlocked league after league</li>
+      <li>Hundreds of grids from 5×5 to 9×9 in three difficulties, unlimited play and a timed mode</li>
       <li>No lives, no energy, no subscription</li>
-      <li>Dark mode, colorblind-friendly colors, English, French and German</li>
+      <li>Dark mode, colorblind-friendly colors, plays offline</li>
+      <li>English, French, German, Spanish, Italian, Portuguese and Dutch</li>
     </ul>
   </div>
   <div class="links">
-    <a class="btn" href="privacy.html">Privacy policy</a>
+    <a class="btn ghost" href="privacy.html">Privacy policy</a>
+    <a class="btn ghost" href="../play/">All games &#9656;</a>
   </div>
   <footer>Firefly Trail · © 2026 <a href="../">Artronic</a>, a brand of ND Inovation Groupe · <a href="mailto:artronic.n@gmail.com">artronic.n@gmail.com</a></footer>
 </main>
